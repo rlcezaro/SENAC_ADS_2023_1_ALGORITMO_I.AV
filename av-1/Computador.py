@@ -7,6 +7,9 @@ class Computador(ABC):
         self.cor = cor
         self.preco = preco
 
+    def getInformacoes(self):
+        return f"Modelo: {self.modelo}, Cor: {self.cor}, Preco: R$ {self.preco}"
+
     @abstractmethod
     def cadastrar(self):
         pass
